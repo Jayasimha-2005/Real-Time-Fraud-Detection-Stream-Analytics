@@ -91,6 +91,30 @@ real-time-fraud-detection/
 
 ---
 
+## 🚀 Quick Start
+
+### 1. Setup Environment
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate  # Windows
+pip install -r requirements.txt
+```
+
+### 2. Download Dataset
+Download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place in `real-time-fraud-detection/data/raw/`
+
+### 3. Run Notebooks in Order
+1. `notebooks/01_data_preprocessing.ipynb` - Data prep & baseline
+2. `notebooks/02_lstm_model.ipynb` - LSTM & GRU models
+3. `notebooks/04_autoencoder_model.ipynb` - Autoencoder & ensemble
+
+### 4. (Optional) Real-Time Streaming
+See [streaming/README.md](real-time-fraud-detection/streaming/README.md) for Kafka + Spark setup
+
+📖 **For detailed step-by-step instructions, see [EXECUTION_GUIDE.md](EXECUTION_GUIDE.md)**
+
+---
+
 ## 🚀 How to Run
 
 1. Create virtual environment
